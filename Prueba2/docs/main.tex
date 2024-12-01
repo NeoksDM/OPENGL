@@ -1,0 +1,52 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}   
+\usepackage{amssymb}  
+\usepackage{amsthm}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\lstset{
+language = C,
+basicstyle = \ttfamily
+keywordstyle=\color{blue},
+commentstyle=\color{green!60!black},
+stringstyle=\color{red},
+numbers=left,
+numberstyle=\tiny\color{gray},
+stepnumber=1,
+numbersep=10pt,
+tabsize=4,
+showspaces=false,
+showstringspaces=false,
+breaklines=true,
+breakatwhitespace=true,
+frame=single
+}
+
+\begin{document}
+\begin{lstlisting}
+SDL_RenderDrawPoint(render, x, y);
+\end{lstlisting}
+\begin{lstlisting}
+SDL_RenderDrawPoints(render, points, num_points);
+\end{lstlisting}
+\begin{lstlisting}
+SDL_RenderDrawLine(render, x1, y1, x2, y2);
+\end{lstlisting}
+\begin{lstlisting}
+SDL_RenderDrawLines(render, points, num_points);
+\end{lstlisting}
+\begin{lstlisting}
+SDL_RenderDrawRect(render, &rect);
+\end{lstlisting}
+\begin{lstlisting}
+SDL_RenderDrawRects(render, rects, num_rects);
+\end{lstlisting}
+\begin{lstlisting}
+SDL_RenderFillRect(render, &rect);
+\end{lstlisting}
+\begin{lstlisting}
+SDL_RenderFillRects(render, rect, num_rects);
+\end{lstlisting}
+\end{document}
